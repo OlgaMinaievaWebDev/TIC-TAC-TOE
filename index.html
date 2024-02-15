@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="style.css">
- <title>TIC-TAC-TOE</title>
-</head>
-<body>
- <h1>TIC-TAC-TOE</h1>
- <div class="container"></div>
- <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TIC-TAC-TOE</title>
+  </head>
+  <body>
+    <header>
+      <h1>TIC-TAC-TOE</h1>
+    </header>
+    <main>
+  <div class="players">
+   <input type="text" id="player-one" placeholder="Player One Name" required>
+   <input type="text" id="player-two" placeholder="Player Two Name" required>
+   <button type="button">Play</button>
+  </div>
+    </main>
+    <div class="playfield"></div>
+    <script src="app.js"></script>
+  </body>
 </html>
