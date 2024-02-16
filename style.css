@@ -10,6 +10,7 @@
 }
 
 header {
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -31,19 +32,19 @@ input[type="text"] {
   border-radius: 0.4em;
   font-size: 1em;
   color: #333;
+}
+input::placeholder {
+  color: #999;
+}
 
-  ::placeholder {
-    color: #999;
-  }
+input:focus {
+  border-color: #ff4500;
+  outline: none;
+  color: #ff4500;
+}
 
-  :focus {
-    border-color: #ff4500;
-    outline: none;
-  }
-
-  :hover {
-    border-color: #666;
-  }
+input:hover {
+  border-color: #666;
 }
 
 button {
