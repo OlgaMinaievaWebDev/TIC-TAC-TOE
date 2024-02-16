@@ -8,3 +8,39 @@
   font-weight: 400;
   font-style: normal;
 }
+
+header {
+  text-align: center;
+}
+
+main {
+  width: 60vw;
+  max-width: 450px;
+  margin: 2em auto;
+}
+
+.user-data {
+  display: flex;
+  padding: 1em;
+}
+
+input[type="text"] {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 0.4em;
+  font-size: 1em;
+  color: #333;
+
+  ::placeholder {
+    color: #999;
+  }
+
+  :focus {
+    border-color: #007bff;
+    outline: none;
+  }
+
+  :hover {
+    border-color: #666;
+  }
+}
