@@ -21,7 +21,8 @@ main {
 
 .user-data {
   display: flex;
-  padding: 1em;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 input[type="text"] {
@@ -36,11 +37,28 @@ input[type="text"] {
   }
 
   :focus {
-    border-color: #007bff;
+    border-color: #ff4500;
     outline: none;
   }
 
   :hover {
     border-color: #666;
   }
+}
+
+button {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 1px solid #333;
+  border: 1px solid #ccc;
+  border-radius: 0.4em;
+}
+
+button:hover {
+  border-color: #ff4500;
+}
+
+button:active {
+  transform: translateY(2px);
 }
