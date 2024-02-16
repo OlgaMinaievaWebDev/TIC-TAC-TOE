@@ -22,7 +22,8 @@ main {
 
 .user-data {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 1em;
   align-items: center;
 }
 
@@ -48,12 +49,15 @@ input:hover {
 }
 
 button {
+  width: 100px;
   padding: 0.5em 1em;
   font-size: 1rem;
   background-color: transparent;
   border: 1px solid #333;
   border: 1px solid #ccc;
   border-radius: 0.4em;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 button:hover {
@@ -62,4 +66,20 @@ button:hover {
 
 button:active {
   transform: translateY(2px);
+}
+
+#gameboard {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #999;
 }
